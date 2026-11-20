@@ -6,13 +6,7 @@ from playwright.sync_api import sync_playwright
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 CHAT_ID = os.environ["CHAT_ID"]
 
-KEYWORDS = [
-    "النادي الإفريقي",
-    "الافريقي",
-    "Club Africain",
-    "Zamalek SC",
-    "نادي الزمالك",
-]
+KEYWORDS = ["النادي الإفريقي", "الافريقي", "Club Africain"]
 URL = "https://www.tazkarti.com/#/matches"
 
 
