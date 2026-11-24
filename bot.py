@@ -54,9 +54,6 @@ def start_alarm(found_keyword):
 
 def monitor():
     check_stop_command()
-    # يبعت رسالة تأكيد فقط لما تشغله يدوياً للتجربة عشان ميزعجكش كل 5 دقايق
-    if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch":
-        send_telegram("🟢 البوت شغال على السحابة وبيراقب موقع تذكرتي دلوقتي...")
 
     start_time = time.time()
     max_duration = 270  # يراقب لمدة 4 دقائق ونصف في كل دورة
